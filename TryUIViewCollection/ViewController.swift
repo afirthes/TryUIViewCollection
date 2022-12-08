@@ -7,18 +7,6 @@
 
 import UIKit
 
-
-struct Follower: Codable, Hashable {
-    var login: String
-    var avatarUrl: String
-    
-    // custom hash func
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(login)
-    }
-    
-}
-
 class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     
     var collectionView:UICollectionView!
